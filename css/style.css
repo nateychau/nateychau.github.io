@@ -1,0 +1,29 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+
+p {
+    font-family: "Segoe UI"
+}
+
+.nav-link{
+    font-weight: bold;
+    color:    #8c8c8c
+    ;    
+}
+
+
+a{
+    font-family: "Segoe UI";
+}
+
+a:hover{
+    color:  #f2f2f2;
+}
+body{
+    background-color:   #ffe6cc;
+    font-family: "Segoe UI";
+}
