@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    height: 370px;
 }
 
 .center-align {
@@ -16,6 +16,11 @@
 
 p {
     font-family: "Segoe UI"
+}
+
+.nav{
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .nav-link{
