@@ -24,7 +24,39 @@ p {
     margin-top: 20px;
 }
 
+#header {
+    transform: translateY(-200%);
+    -webkit-transform: translateY(-200%);
+    animation-name: ySlide;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    position: relative;
+    z-index: 1;
+}
 
+@keyframes ySlide {
+    100% {transform: translateY(0%);}
+}
+
+@-webkit-keyframes ySlide {
+    100% {transform: translateY(0%);}
+}
+
+#coverPhoto{
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+    animation-name: xSlide;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;;
+}
+
+@keyframes xSlide {
+    100% {transform: translateX(0%);}
+}
+
+@-webkit-keyframes xSlide {
+    100% {transform: translateX(0%);}
+}
 .nav-link{
     font-weight: bold;
     color:    #8c8c8c
@@ -42,4 +74,45 @@ a:hover{
 body{
     background-color:   #ffe6cc;
     font-family: "Segoe UI" !important;
+    overflow: auto;
 }
+/* .no_overflow{
+    overflow: hidden;
+    animation: overflowDelay .5s 2s;
+    -webkit-animation: overflowDelay .5s 2s;
+}
+
+@keyframes overflowDelay{
+    from {overflow: auto;}
+}
+
+@-webkit-keyframes overflowDelay{
+    from {overflow: auto;}
+} */
+
+.projBody{
+    transform: translateY(200%);
+    -webkit-transform: translateY(200%);
+    opacity: 0;
+    animation: opacitySlide 1.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation: opacitySlide 1.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes opacitySlide {
+    80% {transform: translateY(0%); opacity: .8;}
+    100% {transform: translateY(0%); opacity: 1;}
+}
+
+@-webkit-keyframes opacitySlide {
+    80% {transform: translateY(0%); opacity: .8;}
+    100% {transform: translateY(0%); opacity: 1;}
+}
+/* .projPhoto{
+    transform: translateX(200%);
+    -webkit-transform: translateX(200%);
+    animation-name: xSlide;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+} */
