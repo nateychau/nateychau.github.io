@@ -5,14 +5,22 @@
     height: 370px;
 }
 
-.center-align {
+#coverPhoto{
+    max-width: 650px;
+}
+
+#aboutPhoto{
+    max-width: 300px;
+}
+
+/* .center-align {
     margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  }
+  } */
 
 p {
     font-family: "Segoe UI";
@@ -91,22 +99,20 @@ body{
 } */
 
 .projBody{
-    transform: translateY(200%);
-    -webkit-transform: translateY(200%);
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
     opacity: 0;
-    animation: opacitySlide 1.5s;
+    animation: opacitySlide 2s;
     animation-fill-mode: forwards;
-    -webkit-animation: opacitySlide 1.5s;
+    -webkit-animation: opacitySlide 2s;
     -webkit-animation-fill-mode: forwards;
 }
 
 @keyframes opacitySlide {
-    80% {transform: translateY(0%); opacity: .8;}
     100% {transform: translateY(0%); opacity: 1;}
 }
 
 @-webkit-keyframes opacitySlide {
-    80% {transform: translateY(0%); opacity: .8;}
     100% {transform: translateY(0%); opacity: 1;}
 }
 /* .projPhoto{
